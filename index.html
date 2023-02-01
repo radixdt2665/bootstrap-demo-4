@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap Demo 4</title>
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="nav-fixed">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg theme-bg-black text-white flex-row flex-lg-column border-radius-75 custom-navbar pb-3 ">
+                <p class="text-theme font-72 pt-lg-5 logo-main"><span class="fw-bold">Deli//</span><span class="font-robotoSlab-light">Break</span></p>
+                <div class="container-fluid px-5">
+                    <a class="navbar-brand text-theme" href="#">Deli//Break</a>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse font-15" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ps-xl-5">
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" aria-current="page" href="#">Bevrages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Desserts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Promotions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Star Program</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Branches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-column flex-sm-row list-unstyled mb-0 gap-3 gap-xl-5 ms-auto">
+                            <div class="d-flex gap-2">
+                                <a href="#" class="d-block font-19 social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#" class="d-block font-19 social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#" class="d-block font-19 social-link"><i class="fa-brands fa-square-youtube"></i></a>
+                            </div>
+                            <p class="mb-0 left-line position-relative"><span> Quality and taste</span><span>//</span><span>Guaranteed</span></p>
+                        </div>   
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <!-- navbar end -->
+
+    <!-- banner sectoin start -->
+    <section class="banner-section py-5 position-relative">
+        <div class="banner-img-p-div">
+            <img src="./Assets/images/banner-img.png" alt="Banner Image" width="1474" height="815" class="img-fluid w-100 ">
+        </div>
+        <div class="position-absolute w-100 banner-content-position">
+            <div class="container">    
+                <div class="row justify-content-end">
+                    <div class="col-lg-4 col-xl-4 ps-lg-5">
+                        <div class="banner-content px-0 text-center text-lg-start">
+                            <p class="mb-0 font-37 font-robotoSlab-light line-height-49">Learn how to make amazing cakes</p>
+                            <p class="font-34 line-height-41 my-2 my-md-4">Have you already tried the classic double chocolate cake?</p>
+                            <a href="#" class="text-decoration-none bg-theme text-white px-5 py-1 font-22 d-inline-block rounded-pill theme-btn">Pastry Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner sectoin end -->
+
+    <!-- about-dish section start -->
+    <section class="about-dish-section py-5 mt-lg-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row g-0">
+                        <div class="col-md-6 bg-white rounded-corners d-flex justify-content-center flex-column shadow-brown shadow-img rounded-sm-corners">
+                            <div class="content py-5 px-4 px-sm-5 text-center text-sm-start">
+                                <h5 class="font-39">Healthy and delicious</h5>
+                                <p class="font-32 line-height-42 font-robotoSlab-light">Taste delicious smoothies with seasonal fruits</p>
+                                <p class="font-14 me-lg-5 pe-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                                <p class="text-theme font-27 line-height-33">Traditional fruit <span class="d-block"> smoothie only $6</span></p>
+                                <ul class="list-unstyled">
+                                    <li class="font-14 fw-bold">Extra Oats</li>
+                                    <li class="font-14 fw-bold">Extra Fruit</li>
+                                    <li class="font-14 fw-bold">Extra Cream</li>
+                                    <li class="font-14 fw-bold">Extra Topping</li>
+                                </ul>
+                                <a href="#" class="text-decoration-none bg-theme text-white px-5 py-1 font-19 d-inline-block rounded-pill theme-btn">Buy Now</a>
+                                <p class="font-11 mt-3 mt-lg-5 me-lg-5 pe-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis </p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 h-auto mt-4 mt-md-0 text-center text-md-start">
+                            <img src="./Assets/images/about-dish-1.png" alt="" class="img-shadow img-fluid object-fit-cover h-100 rounded-sm-corners ">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="mb-0 left-line line-black position-relative font-14 fw-bold mt-4 d-inline-block"><span> Quality and taste</span><span>//</span><span>Guaranteed</span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-dish section end -->
+
+
+    <!-- beverage-course-section start -->
+    <section class="banner-section py-5 position-relative beverage-section">
+        <div class="banner-img-p-div">
+            <img src="./Assets/images/beverage-img-2.png" alt="Banner Image" width="1342" height="894" class="img-fluid w-100">
+        </div>
+        <div class="position-absolute w-100 banner-content-position">
+            <div class="container">    
+                <div class="row justify-content-end">
+                    <div class="col-lg-4 col-xl-5">
+                        <div class="banner-content px-0 text-center text-lg-start">
+                            <p class="mb-0 font-39 line-height-49 text-center text-xl-start">Beverage courses </p>
+                            <p class="font-32 font-robotoSlab-light line-height-41 mt-2 mb-4 text-center text-xl-start">Learn how to combine fruits and vegetables in the right way</p>
+                            <div class="ms-xl-5 ps-lg-5">
+                                <form action="beverage form" id="beverage-form" class="beverage-form mt-lg-5">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control font-robotoSlab-bold border-0 rounded-pill " required id="name" placeholder="Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control font-robotoSlab-bold border-0 rounded-pill " required id="emailId" placeholder="Password">
+                                    </div>
+                                </form>
+                                <button type="submit" form="beverage-form" class="text-decoration-none bg-theme text-white px-5 py-1 font-22 d-block rounded-pill theme-btn text-center border-0">Search for Dates</button>
+                                <p class="font-11 mt-3 mb-0 text-center text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- beverage-course-section end -->
+  
+    <!-- beverage-menu-section start -->
+     <section class="about-dish-section beverage-menu-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10">
+                    <div class="row g-0 justify-content-center">
+                        <div class="col-md-5 h-auto mb-4 mb-md-0 text-center text-md-start">
+                            <img src="./Assets/images/beverage-menu.png" class="img-fluid h-100 object-fit-cover rounded-corners rounded-sm-corners" alt="">
+                        </div>
+                        <div class="col-md-7 theme-bg-black text-white rounded-right-corners position-relative overflow-hidden rounded-sm-corners">
+                            <div class="content py-5 px-4 px-sm-5">
+                                <h5 class="font-66 text-center text-sm-start"><span class="font-robotoSlab-light">Deli//</span><span class="font-robotoSlab-light">Break</span></h5>
+                                <p class="font-34 line-height-42 text-center text-sm-start">Beverage Menu</p>
+                                <div class="main-menu mt-5">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="menu-item">
+                                            <p class="font-robotoSlab-light font-21 mb-0">Double Chocolate Frappuccino</p>
+                                            <p class="font-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                        </div>
+                                        <div class="menu-price">
+                                            <span class="font-21 font-robotoSlab-light">$8</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="menu-item">
+                                            <p class="font-robotoSlab-light font-21 mb-0">Strawberry with cream cheese</p>
+                                            <p class="font-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                        </div>
+                                        <div class="menu-price">
+                                            <span class="font-21 font-robotoSlab-light">$12.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="menu-item">
+                                            <p class="font-robotoSlab-light font-21 mb-0">Fruit with oatmeal</p>
+                                            <p class="font-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                        </div>
+                                        <div class="menu-price">
+                                            <span class="font-21 font-robotoSlab-light">$12</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="menu-item">
+                                            <p class="font-robotoSlab-light font-21 mb-0">Detox</p>
+                                            <p class="font-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                        </div>
+                                        <div class="menu-price">
+                                            <span class="font-21 font-robotoSlab-light">$9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="text-decoration-none bg-theme text-white px-5 py-3 font-22 d-inline-block theme-btn w-100 text-center text-md-start">Shake & beverage menu</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6">
+                                <p class="font-11 mt-4 ms-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- beverage-menu-section end -->
+
+    <!-- shakes-section start -->
+    <section class="banner-section py-5 position-relative shake-section">
+        <div class="banner-img-p-div">
+            <img src="./Assets/images/shake-section-img.png" alt="Shake Image" width="1474" height="815" class="img-fluid w-100">
+        </div>
+        <div class="position-absolute w-100 banner-content-position">
+            <div class="container">    
+                <div class="row justify-content-start">
+                    <div class="col-lg-6 col-xl-6 ps-lg-5">
+                        <div class="banner-content px-0 text-center text-lg-start">
+                            <p class="mb-0 font-76 font-robotoSlab-light line-height-92">Sugar Free Shakes</span> </p>
+                            <p class="font-39 fw-bold line-height-47 ">The best calories-free flavor</p>
+            
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="mt-xl-5">
+                                        <p class="font-26">Order yours delivered to your home or visit your favorite branch</p>
+                                        <a href="#" class="text-decoration-none bg-theme text-white px-5 py-1 font-22 d-inline-block rounded-pill theme-btn">Find a branch</a>
+                                        <br>
+                                        <a href="#" class="text-decoration-none bg-theme text-white px-5 py-1 font-22 d-inline-block rounded-pill theme-btn mt-3">Place your order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shakes-section end -->
+
+     <!-- about-dish section start -->
+     <section class="learn-more-section about-dish-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10">
+                    <div class="row g-0">
+                        <div class="col-md-7 bg-white rounded-corners shadow-brown d-flex flex-column justify-content-center align-items-center rounded-sm-corners">
+                            <div class="content py-5 px-4 px-sm-5">
+                                <h5 class="font-39 text-center text-sm-start">Learn more <br> about us</h5>
+                                <p class="font-32 line-height-42 font-robotoSlab-light text-center text-sm-start">Passionate about always offering you the best</p>
+                                <p class="font-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <p class="font-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
+                               <div class="text-center text-sm-start">
+                                   <a href="#" class="text-decoration-none bg-theme text-white px-5 py-1 font-22 d-inline-block rounded-pill theme-btn my-3 my-md-5">Read More</a>
+                               </div>
+                                <p class="font-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis  </p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5 h-auto mt-4 mt-md-0 text-center text-md-start">
+                            <img src="./Assets/images/learn-more-section.png" alt="" class="img-shadow img-fluid h-100 object-fit-cover rounded-sm-corners">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="mb-0 left-line line-black position-relative font-14 fw-bold mt-4 d-inline-block"><span> Quality and taste</span><span>//</span><span>Guaranteed</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-dish section end -->
+
+    <!-- all-test section start -->
+    <section class="all-test-section py-5 mt-lg-5 ">
+        <div class="container">
+            <div class="row g-0 bg-right-white position-relative">
+                <div class="col-md-7 col-xl-4 bg-white h-auto pe-lg-5 rounded-sm-corners-white-bg">
+                    <div class="content py-5 px-4 px-sm-5">
+                        <h5 class="font-38 line-height-46 text-center text-sm-start">Favorite <br> seasonal <br>smoothie</h5>
+                        <p class="font-25 line-height-33 font-robotoSlab-light my-4 text-center text-sm-start">The most loved by the little ones</p>
+                        <p class="font-11 line-height-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <ul class="list-unstyled text-center text-sm-start">
+                            <li class="font-14 fw-bold">Extra Topping</li>
+                            <li class="font-14 fw-bold">Extra Cream</li>
+                            <li class="font-14 fw-bold">Extra Gummies</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-7">
+                                <a href="#" class="text-decoration-none bg-theme text-white px-4 py-1 font-17 d-inline-block rounded-pill theme-btn">Buy Now</a>
+                            </div>
+                            <div class="col-5">
+                                <div class="d-flex align-items-center">
+                                    <button class="border-0 d-flex justify-content-center align-items-center p-2 number-btn btn-left"><i class="font-14 fa-solid fa-minus"></i></button>
+                                    <span class="mx-3">1</span>
+                                    <button class="border-0 d-flex justify-content-center align-items-center p-2 number-btn btn-right"><i class="font-14 fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xl-4 h-auto mt-4 mt-md-0 text-center text-md-start"> 
+                    <img src="./Assets/images/smoothie-img.png" alt="" class="img-shadow-left img-fluid h-100 object-fit-cover rounded-sm-corners">
+                </div>
+                <div class="col-md-6 mt-4 mx-auto mt-xl-0 col-xl-4 col-xxl-3 offset-xxl-1 d-flex justify-content-center flex-column px-sm-4 px-xxl-0">
+                    <p class="font-52 font-robotoSlab-light">For all tastes</p>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <p class="font-15 font-robotoSlab-bold">Accompany your drink with a deli dessert : </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="sub-img-p-div">
+                            <img src="./Assets/images/smoothie-img-1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <a href="#" class="text-black">Add to my order</a>
+                            <div class="d-flex align-items-center mt-2">
+                                <button class="border-0 d-flex justify-content-center align-items-center p-2 number-btn btn-left"><i class="font-14 fa-solid fa-minus"></i></button>
+                                <span class="mx-3">1</span>
+                                <button class="border-0 d-flex justify-content-center align-items-center p-2 number-btn btn-right"><i class="font-14 fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                        <div class="sub-img-p-div">
+                            <img src="./Assets/images/smoothie-img-2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <a href="#" class="text-black">Add to my order</a>
+                            <div class="d-flex align-items-center mt-2">
+                                <button class="border-0 d-flex justify-content-center align-items-center p-2 number-btn btn-left"><i class="font-14 fa-solid fa-minus"></i></button>
+                                <span class="mx-3">1</span>
+                                <button class="border-0 d-flex justify-content-center align-items-center p-2 number-btn btn-right"><i class="font-14 fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block">
+                        <a href="#" class="text-decoration-none mt-4 theme-bg-black text-white px-4 py-1 font-17 d-inline-block rounded-pill theme-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-dish section end -->
+
+    <div class="linear-gradient">
+        
+            <!-- sign-up-section start -->
+            <section class="sign-up-section text-center">
+                <div class="container">
+                    <div class="star-img-bg position-relative">
+                        <h5 class="font-123 position-relative z-index-99 star-img-right-top "><span class="fw-bold">Deli//</span><span class="font-robotoSlab-light">Break</span></h5>
+                        <div class="row justify-content-center position-relative z-index-99 star-imgs">
+                            <div class="col-xxl-4 mt-lg-4">
+                                <p class="font-38 font-robotoSlab-light line-height-46">Your favorite free drink on your birthday</p>
+                                <a href="#" class="text-decoration-none theme-bg-black text-white px-5 py-1 font-22 d-inline-block d-xxl-block rounded-pill theme-btn mt-2 mt-lg-4">Sign up now</a>
+                                <p class="font-11 mt-3 mt-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- sign-up-section end -->
+        
+        
+            <!-- footer start -->
+            <footer>
+                <div class="footer-main mt-lg-5">
+                    <div class="container">
+                        <div class="theme-bg-black footer-rounded-corner px-5 py-5">
+                            <!-- <div><img src="./Assets/images/Shadow.png" alt="" class="shadow-img"></div> -->
+                            <p class="text-center text-theme font-72"><span class="fw-bold">Deli//</span><span class="font-robotoSlab-light">Break</span></p>
+                            <div class="text-center">
+                                <p class="text-white left-line position-relative d-inline-block">Quality and taste //Guaranteed</p>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-flex gap-2 mb-3">
+                                        <a href="#" class="font-19 d-block social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                                        <a href="#" class="font-19 d-block social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                                        <a href="#" class="font-19 d-block social-link"><i class="fa-brands fa-square-youtube"></i></a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-3">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Beverages</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Desserts</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Promotions</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Star program</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Branches</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-sm-6">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Gallery</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Blog</a></li>
+                                                <li class="mb-3"><a href="#" class="text-white text-decoration-none footer-link pb-1">Star Program</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 offset-lg-3">
+                                    <p class="font-27 line-height-34 text-white"><span>Sign up for</span><span class="d-lg-block"> our newsletter : </span></p>
+                                    <form class="footer-form">
+                                        <div class="mb-3">
+                                            <input type="text" required class="form-control font-robotoSlab-bold border-0 rounded-pill " id="name" placeholder="Name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" required class="form-control font-robotoSlab-bold border-0 rounded-pill " id="emailId" placeholder="Email">
+                                        </div>
+                                        <button type="submit" href="#" class="border-0 text-decoration-none bg-theme text-white px-5 py-1 font-19 d-block rounded-pill theme-btn text-center">Sign up</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end -->
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+                var height = $(".custom-navbar").outerHeight();
+                if (scroll >= 50) {
+                    $(".custom-navbar").addClass("headerSticky");
+                } else {
+                    $(".custom-navbar").removeClass("headerSticky");
+                }
+        });
+      
+    </script>
+</body>
+</html>

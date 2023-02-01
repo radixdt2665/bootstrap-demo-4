@@ -1,0 +1,680 @@
+@font-face {
+  font-family: "robotoSlab";
+  src: url(/Assets/fonts/RobotoSlab-Regular-woff.woff) format(woff),
+    url(/Assets/fonts/RobotoSlab-Regular-woff2.woff2) format(woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "robotoSlab-Bold";
+  src: url(/Assets/fonts/RobotoSlab-Bold-woff.woff) format(woff),
+    url(/Assets/fonts/RobotoSlab-Bold-woff2.woff2) format(woff2);
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "robotoSlab-light";
+  src: url(/Assets/fonts/RobotoSlab-Light-woff.woff) format(woff),
+    url(/Assets/fonts/RobotoSlab-Light-woff2.woff2) format(woff2);
+  font-style: normal;
+  font-weight: lighter;
+  font-display: swap;
+}
+
+:root {
+  --robotoSlab-light: "robotoSlab-light";
+  --robotoSlab: "robotoSlab";
+  --robotoSlab-Bold: "robotoSlab-Bold";
+
+  --theme-bg: #f1e8e3;
+  --black-bg: #3a3a3a;
+  --theme-color: #b68e76;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --theme-btn-hover: #9d7e6b;
+  --theme-bg-black-hover: #555555;
+
+  --font-10: 10px;
+  --font-11: 11px;
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-15: 15px;
+  --font-19: 19px;
+  --font-21: 21px;
+  --font-22: 22px;
+  --font-25: 25px;
+  --font-26: 26px;
+  --font-27: 27px;
+  --font-32: 32px;
+  --font-34: 34px;
+  --font-37: 37px;
+  --font-38: 38px;
+  --font-39: 39px;
+  --font-52: 52px;
+  --font-66: 66px;
+  --font-72: 72px;
+  --font-76: 76px;
+  --font-123: 123px;
+
+  --line-height-14: 14px;
+  --line-height-19: 19px;
+  --line-height-26: 26px;
+  --line-height-30: 30px;
+  --line-height-31: 31px;
+  --line-height-33: 33px;
+  --line-height-34: 34px;
+  --line-height-41: 41px;
+  --line-height-42: 42px;
+  --line-height-46: 46px;
+  --line-height-47: 47px;
+  --line-height-49: 49px;
+  --line-height-56: 56px;
+  --line-height-64: 64px;
+  --line-height-87: 87px;
+  --line-height-92: 92px;
+  --line-height-95: 95px;
+  --line-height-162: 162px;
+}
+
+.font-10 {
+  font-size: var(--font-10);
+}
+.font-11 {
+  font-size: var(--font-11);
+}
+.font-12 {
+  font-size: var(--font-12);
+}
+.font-14 {
+  font-size: var(--font-14);
+}
+.font-15 {
+  font-size: var(--font-15);
+}
+.font-19 {
+  font-size: var(--font-19);
+}
+.font-21 {
+  font-size: var(--font-21);
+}
+.font-22 {
+  font-size: var(--font-22);
+}
+.font-25 {
+  font-size: var(--font-25);
+}
+.font-26 {
+  font-size: var(--font-26);
+}
+.font-27 {
+  font-size: var(--font-27);
+}
+.font-32 {
+  font-size: var(--font-32);
+}
+.font-34 {
+  font-size: var(--font-34);
+}
+.font-37 {
+  font-size: var(--font-37);
+}
+.font-38 {
+  font-size: var(--font-38);
+}
+.font-39 {
+  font-size: var(--font-39);
+}
+.font-52 {
+  font-size: var(--font-52);
+}
+.font-66 {
+  font-size: var(--font-66);
+}
+.font-72 {
+  font-size: var(--font-72);
+}
+.font-76 {
+  font-size: var(--font-76);
+}
+.font-123 {
+  font-size: var(--font-123);
+}
+
+.line-height-14 {
+  line-height: var(--line-height-14);
+}
+.line-height-19 {
+  line-height: var(--line-height-19);
+}
+.line-height-26 {
+  line-height: var(--line-height-26);
+}
+.line-height-30 {
+  line-height: var(--line-height-30);
+}
+.line-height-31 {
+  line-height: var(--line-height-31);
+}
+.line-height-33 {
+  line-height: var(--line-height-33);
+}
+.line-height-34 {
+  line-height: var(--line-height-34);
+}
+.line-height-41 {
+  line-height: var(--line-height-41);
+}
+.line-height-42 {
+  line-height: var(--line-height-42);
+}
+.line-height-46 {
+  line-height: var(--line-height-46);
+}
+.line-height-47 {
+  line-height: var(--line-height-47);
+}
+.line-height-49 {
+  line-height: var(--line-height-49);
+}
+.line-height-56 {
+  line-height: var(--line-height-56);
+}
+.line-height-64 {
+  line-height: var(--line-height-64);
+}
+.line-height-87 {
+  line-height: var(--line-height-87);
+}
+.line-height-92 {
+  line-height: var(--line-height-92);
+}
+.line-height-95 {
+  line-height: var(--line-height-95);
+}
+.line-height-162 {
+  line-height: var(--line-height-162);
+}
+
+.theme-bg-black {
+  background-color: var(--black-bg);
+}
+.bg-theme {
+  background-color: var(--theme-color);
+}
+.text-theme {
+  color: var(--theme-color);
+}
+
+.font-robotoSlab-light {
+  font-family: var(--robotoSlab-light), sans-serif;
+}
+.font-robotoSlab-bold {
+  font-family: var(--robotoSlab-Bold), sans-serif;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+body,
+html {
+  background-color: var(--theme-bg);
+  font-family: var(--robotoSlab), sans-serif;
+}
+
+.rounded-corners {
+  border-radius: 105px 0 0 105px;
+}
+.rounded-right-corners {
+  border-radius: 0 105px 105px 0;
+}
+.z-index-99 {
+  z-index: 99;
+}
+
+.left-line::before {
+  position: absolute;
+  content: "";
+  height: 40%;
+  width: 3px;
+  background: var(--color-white);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left-line.line-black::before {
+  background: var(--color-black);
+  left: -40px;
+}
+.shadow-brown {
+  box-shadow: hwb(0deg 26% 63% / 71%) -16px 4px 44px -17px;
+}
+.img-shadow {
+  box-shadow: hwb(0deg 42% 57% / 71%) -16px 4px 44px -17px;
+  border-radius: 0 105px 111px 0;
+}
+.img-shadow-left {
+  box-shadow: 8px 0px 15px -6px #333;
+  border-radius: 0 111px 111px 0;
+}
+
+.theme-btn.bg-theme {
+  transition: all 0.4s linear;
+}
+.theme-btn.bg-theme:hover {
+  background-color: var(--theme-btn-hover);
+  transition: all 0.4s linear;
+}
+
+.theme-btn.theme-bg-black {
+  transition: all 0.4s linear;
+}
+.theme-btn.theme-bg-black:hover {
+  transition: all 0.4s linear;
+  background-color: var(--theme-bg-black-hover);
+}
+
+/* navbar-css start */
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.custom-navbar.border-radius-75 {
+  border-radius: 0 0 75px 75px;
+  box-shadow: 0px 15px 30px -7px #111;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.custom-navbar .social-gap {
+  gap: 5px;
+}
+.custom-navbar .nav-link {
+  border-bottom: 4px double transparent;
+  transition: all 0.4s linear;
+  position: relative;
+  left: 0;
+}
+.custom-navbar .nav-link:hover {
+  border-bottom: 4px double var(--theme-color);
+  position: relative;
+  transition: all 0.4s linear;
+}
+.custom-navbar .navbar-brand {
+  display: none;
+}
+.custom-navbar.headerSticky {
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.custom-navbar.headerSticky .logo-main {
+  display: none;
+}
+.custom-navbar.headerSticky .navbar-brand {
+  display: block;
+}
+.social-link {
+  color: var(--color-white);
+  transition: all 0.3s linear;
+}
+.social-link:hover {
+  color: var(--theme-color);
+  transition: all 0.3s linear;
+}
+/* navbar-css end */
+
+/* banner-section css start */
+.banner-section .banner-content-position {
+  top: 40%;
+}
+.banner-section .banner-content {
+  right: 60px;
+  padding-right: 7rem;
+  top: 50%;
+}
+/* banner-section css end */
+
+/* about-dish-section css start */
+.about-dish-section ul li:before,
+.all-test-section ul li::before {
+  font-family: "FontAwesome";
+  content: "\f067";
+  margin: 0 5px 0 -15px;
+  color: var(--color-black);
+  font-size: var(--font-11);
+}
+/* about-dish-section css end */
+
+/* beverage-section css start */
+.beverage-section.banner-section .banner-content-position{
+  top: 25%;
+}
+.beverage-section .beverage-form input::placeholder {
+  color: var(--color-black);
+  font-size: var(--font-15);
+}
+/* beverage-section css end */
+
+/* shake-section css start */
+.shake-section.banner-section .banner-content-position{
+  top: 25%;
+}
+.shake-section .banner-content {
+  right: 50%;
+  top: 30%;
+}
+/* shake-section css end */
+
+/* all-test-section-css start */
+.all-test-section .bg-right-white::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: white;
+  left: -100%;
+}
+.all-test-section .number-btn {
+  background-color: var(--theme-color);
+  color: var(--color-white);
+  height: 30px;
+  width: 30px;
+}
+.all-test-section .number-btn.btn-left {
+  border-radius: 25px 0 0 25px;
+}
+.all-test-section .number-btn.btn-right {
+  border-radius: 0 25px 25px 0;
+}
+/* all-test-section-css start */
+
+/* sign-up-section css start */
+.sign-up-section {
+  padding: 150px 0;
+}
+.sign-up-section .star-img-bg .star-img-right-top::before {
+  position: absolute;
+  content: "";
+  background-image: url("/Assets/images/Strar-top-right.png");
+  left: 73%;
+  top: -125px;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 83px;
+}
+.sign-up-section .star-img-bg .star-imgs::before {
+  position: absolute;
+  content: "";
+  background-image: url("/Assets/images/Strar-left.png");
+  left: 15%;
+  top: -25px;
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 94px;
+}
+.sign-up-section .star-img-bg .star-imgs::after {
+  position: absolute;
+  content: "";
+  background-image: url("/Assets/images/Strar-right-bottom.png");
+  left: 80%;
+  bottom: 25%;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 71px;
+}
+/* sign-up-section css end */
+
+/* footer-main css start */
+.linear-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0) 0%,
+    #bc9781 60%
+  );
+}
+.footer-main {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-rounded-corner {
+  border-radius: 111px 111px 0 0;
+}
+.footer-main .footer-link {
+  border-bottom: 4px double transparent;
+  transition: all 0.4s linear;
+}
+.footer-main .footer-link:hover {
+  border-bottom: 4px double var(--theme-color);
+  transition: all 0.3s linear;
+}
+footer {
+  position: relative;
+  z-index: 9;
+}
+.footer-main .footer-form input::placeholder {
+  color: var(--color-black);
+  font-size: var(--font-12);
+}
+
+/* footer-main css end */
+@media (max-width: 1600px) {
+  :root {
+    --font-76: 50px;
+  }
+
+  .banner-section .banner-content {
+    padding-right: 3rem;
+    top: 40%;
+  }
+  .shake-section .banner-content {
+    top: 20%;
+  }
+  .sign-up-section .star-img-bg::before {
+    left: 0;
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 1366px) {
+  .custom-navbar.border-radius-75 {
+    width: 100%;
+  }
+  .custom-navbar.headerSticky .navbar-brand {
+    font-size: 18px;
+  }
+  .custom-navbar .nav-link {
+    font-size: 13px;
+  }
+  .custom-navbar .left-line {
+    font-size: 13px;
+  }
+
+  .sign-up-section .star-img-bg .star-imgs::before {
+    left: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --robotoSlab-light: "robotoSlab-light";
+    --robotoSlab: "robotoSlab";
+    --robotoSlab-Bold: "robotoSlab-Bold";
+
+    --theme-bg: #f1e8e3;
+    --black-bg: #3a3a3a;
+    --theme-color: #b68e76;
+
+    --font-19: 17px;
+    --font-22: 18px;
+    --font-27: 24px;
+    --font-32: 25px;
+    --font-34: 20px;
+    --font-38: 30px;
+    --font-39: 30px;
+    --font-37: 25px;
+    --font-52: 40px;
+    --font-66: 35px;
+    --font-72: 40px;
+    --font-76: 45px;
+    --font-123: 75px;
+
+    --line-height-33: 28px;
+    --line-height-42: 32px;
+    --line-height-46: 35px;
+    --line-height-41: 30px;
+    --line-height-49: 35px;
+    --line-height-92: 65px;
+  }
+
+  .beverage-section.banner-section .banner-content {
+    left: 0;
+  }
+  .shake-section .banner-content {
+    right: 0%;
+    top: 30%;
+  }
+  .all-test-section .bg-right-white::before {
+    display: none;
+  }
+  .all-test-section .rounded-sm-corners-white-bg {
+    border-radius: 105px 0 0 105px;
+  }
+  .sign-up-section .star-img-bg .star-img-right-top::before,
+  .sign-up-section .star-img-bg .star-imgs::before,
+  .sign-up-section .star-img-bg .star-imgs::after {
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --robotoSlab-light: "robotoSlab-light";
+    --robotoSlab: "robotoSlab";
+    --robotoSlab-Bold: "robotoSlab-Bold";
+
+    --theme-bg: #f1e8e3;
+    --black-bg: #3a3a3a;
+    --theme-color: #b68e76;
+
+    --font-19: 16px;
+    --font-21: 18px;
+    --font-22: 18px;
+    --font-26: 20px;
+    --font-27: 23px;
+    --font-32: 20px;
+    --font-34: 20px;
+    --font-38: 30px;
+    --font-39: 25px;
+    --font-37: 25px;
+    --font-52: 40px;
+    --font-66: 34px;
+    --font-72: 40px;
+    --font-76: 35px;
+    --font-123: 60px;
+
+    --line-height-33: 28px;
+    --line-height-41: 30px;
+    --line-height-42: 25px;
+    --line-height-46: 35px;
+    --line-height-47: 35px;
+    --line-height-49: 35px;
+    --line-height-92: 50px;
+  }
+  .custom-navbar.border-radius-75 {
+    width: 100%;
+  }
+
+  .custom-navbar .logo-main {
+    display: none;
+  }
+  .custom-navbar .navbar-brand {
+    display: block;
+  }
+
+  .banner-section .banner-img-p-div img {
+    opacity: 0.2;
+  }
+  .banner-section .banner-content {
+    right: 0;
+    top: 30%;
+  }
+  .sign-up-section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .rounded-corners,
+  .beverage-menu-section .rounded-right-corners {
+    border-radius: 0;
+  }
+
+  .rounded-sm-corners,
+  .beverage-menu-section .rounded-sm-corners,
+  .all-test-section .rounded-sm-corners-white-bg {
+    border-radius: 105px;
+  }
+
+  .shadow-brown{
+    box-shadow: none;
+  }
+
+  .beverage-section.banner-section .banner-content-position{
+    top: 0;
+  }
+}
+@media (max-width: 575px) {
+  :root {
+
+    --font-19: 15px;
+    --font-21: 17px;
+    --font-22: 16px;
+    --font-26: 16px;
+    --font-27: 22px;
+    --font-32: 20px;
+    --font-34: 20px;
+    --font-37: 25px;
+    --font-38: 30px;
+    --font-39: 24px;
+    --font-52: 35px;
+    --font-66: 30px;
+    --font-72: 40px;
+    --font-76: 25px;
+    --font-123: 40px;
+
+    --line-height-33: 27px;
+    --line-height-42: 28px;
+    --line-height-41: 30px;
+    --line-height-46: 35px;
+    --line-height-47: 28px;
+    --line-height-49: 35px;
+    --line-height-92: 40px;
+  }
+  .banner-section {
+    min-height: 40vh;
+  }
+  .banner-section .banner-content {
+    top: 13%;
+    padding: 0 20px;
+  }
+  .shake-section .banner-content {
+    top: 30px;
+  }
+  .sign-up-section {
+    padding: 40px 0;
+  }
+  .beverage-section.banner-section .banner-content {
+    top: 0;
+  }
+  .footer .font-72 {
+    font-size: 34px;
+  }
+  .footer-main {
+    width: 100%;
+  }
+}
